@@ -210,6 +210,12 @@ img {
     color: #1a1a1a;
 }
 
+.page-image {
+    margin: 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 .page-description {
     font-size: 1.125rem;
     color: #666;
