@@ -1,0 +1,31 @@
+<header class="site-header">
+    <div class="site-header-content">
+        <div class="site-branding">
+            <a class="site-logo" href="{{@site.url}}">
+                {{#if @site.logo}}
+                    <img src="{{@site.logo}}" alt="{{@site.title}}">
+                {{else}}
+                    {{@site.title}}
+                {{/if}}
+            </a>
+            <span class="site-title">{{@site.title}}</span>
+        </div>
+        
+        <div class="header-right">
+            <div class="search-box">
+                <input type="text" id="search-input" class="search-input" placeholder="Search..." autocomplete="off">
+                <button type="button" id="search-clear" class="search-clear" style="display: none;">&times;</button>
+            </div>
+            
+            <div class="archive-dropdown-container">
+                <select id="archive-dropdown" class="archive-dropdown">
+                    <option value="all">All Years</option>
+                </select>
+            </div>
+            
+            <nav class="site-nav">
+                {{navigation}}
+            </nav>
+        </div>
+    </div>
+</header>

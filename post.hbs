@@ -1,0 +1,59 @@
+{{!< default}}
+
+<main class="main-content">
+    
+    {{#post}}
+        <article class="post-full {{post_class}}">
+            
+            <header class="post-full-header">
+                
+                {{#if primary_tag}}
+                    <section class="post-full-tags">
+                        <a href="{{primary_tag.url}}">{{primary_tag.name}}</a>
+                    </section>
+                {{/if}}
+                
+                <h1 class="post-full-title">{{title}}</h1>
+                
+                {{#if custom_excerpt}}
+                    <p class="post-full-custom-excerpt">{{custom_excerpt}}</p>
+                {{/if}}
+                
+                <div class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">
+                        {{date format="D MMMM YYYY"}}
+                    </time>
+                    {{#if reading_time}}
+                        <span class="post-full-meta-length">{{reading_time}}</span>
+                    {{/if}}
+                </div>
+                
+            </header>
+            
+            {{#if feature_image}}
+                <figure class="post-full-image">
+                    <img src="{{feature_image}}" alt="{{title}}">
+                </figure>
+            {{/if}}
+            
+            <section class="post-full-content">
+                {{content}}
+            </section>
+            
+            <footer class="post-full-footer">
+                
+                {{#if tags}}
+                    <section class="post-full-footer-tags">
+                        <span>Tagged in</span>
+                        {{#foreach tags}}
+                            <a href="{{url}}">{{name}}</a>
+                        {{/foreach}}
+                    </section>
+                {{/if}}
+                
+            </footer>
+            
+        </article>
+    {{/post}}
+    
+</main>

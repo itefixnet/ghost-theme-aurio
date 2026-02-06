@@ -1,0 +1,17 @@
+<aside class="sidebar">
+    
+    {{#if @site.twitter}}
+        <div class="sidebar-section social-section">
+            <h3 class="sidebar-title">Connect</h3>
+            <div class="social-links">
+                {{#if @site.twitter}}
+                    <a href="https://twitter.com/{{@site.twitter}}" target="_blank" rel="noopener">Twitter</a>
+                {{/if}}
+                {{#if @site.facebook}}
+                    <a href="https://facebook.com/{{@site.facebook}}" target="_blank" rel="noopener">Facebook</a>
+                {{/if}}
+            </div>
+        </div>
+    {{/if}}
+    
+</aside>
