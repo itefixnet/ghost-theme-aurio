@@ -1,3 +1,5 @@
+![Aurio](aurio.png)
+
 # Aurio Ghost Theme
 
 A clean, minimal Ghost theme with archive filtering and search functionality.
