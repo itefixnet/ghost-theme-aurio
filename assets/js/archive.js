@@ -208,6 +208,15 @@
     function performSearch(query) {
         const posts = document.querySelectorAll('.post-card');
         const postFeed = document.querySelector('.post-feed');
+        const isHomePage = postFeed !== null;
+        
+        // Fix: Redirect to home page when searching from post pages
+        if (!isHomePage) {
+            if (query) {
+                window.location.href = `/?search=${encodeURIComponent(query)}`;
+            }
+            return;
+        }
         
         if (!posts.length) return;
         
