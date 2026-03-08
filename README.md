@@ -106,10 +106,6 @@ The search box in the header provides real-time filtering of posts based on titl
 - Ghost 5.0 or higher
 - Modern web browser with JavaScript enabled
 
-## Support
-
-For issues or questions, please visit the [GitHub repository](https://github.com/yourusername/ghost-theme-aurio).
-
 ## Development
 
 To work on this theme locally:
@@ -118,7 +114,3 @@ To work on this theme locally:
 2. Make your changes
 3. Restart Ghost to see updates
 4. For CSS/JS changes, clear your browser cache
-
-## Credits
-
-Developed for notes.aurio.no
